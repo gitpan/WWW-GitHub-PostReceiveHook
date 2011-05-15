@@ -29,9 +29,9 @@ my %WriteMakefileArgs = (
   'PREREQ_PM' => {
     'JSON' => '0',
     'Try::Tiny' => '0',
-    'Web::Simple' => '0'
+    'Web::Simple' => '0.008'
   },
-  'VERSION' => '0.001',
+  'VERSION' => '0.002',
   'test' => {
     'TESTS' => 't/*.t'
   }

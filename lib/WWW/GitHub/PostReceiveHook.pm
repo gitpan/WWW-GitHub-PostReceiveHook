@@ -9,7 +9,7 @@
 use Web::Simple 'WWW::GitHub::PostReceiveHook';
 package WWW::GitHub::PostReceiveHook;
 BEGIN {
-  $WWW::GitHub::PostReceiveHook::VERSION = '0.001';
+  $WWW::GitHub::PostReceiveHook::VERSION = '0.002';
 }
 # ABSTRACT: A simple means of receiving GitHub's web hooks
 

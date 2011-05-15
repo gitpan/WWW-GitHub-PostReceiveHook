@@ -1,5 +1,9 @@
 Revision history for WWW-GitHub-PostReceiveHook
 
+0.002     2011-05-15 10:19:06 America/New_York
+
+    - Added 0.008 minimum version to Web::Simple.
+
 0.001     2011-05-13 23:39:33 America/Toronto
 
-- Initial release.
+    - Initial release.
