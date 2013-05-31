@@ -8,13 +8,14 @@
 #
 use Web::Simple 'WWW::GitHub::PostReceiveHook';
 package WWW::GitHub::PostReceiveHook;
-BEGIN {
-  $WWW::GitHub::PostReceiveHook::VERSION = '0.002';
+{
+  $WWW::GitHub::PostReceiveHook::VERSION = '0.003';
 }
 # ABSTRACT: A simple means of receiving GitHub's web hooks
 
 use Try::Tiny;
 use JSON;
+use Encode;
 
 has routes => (
     is        => 'rw',
@@ -48,6 +49,9 @@ sub dispatch_request {
             my $response;
 
             try {
+                # encode multibyte
+                $payload = encode_utf8 $payload;
+
                 # deserialize
                 my $json = decode_json $payload;
 

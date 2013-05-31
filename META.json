@@ -4,7 +4,7 @@
       "Matt Phillips <mattp@cpan.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.200006, CPAN::Meta::Converter version 2.110930",
+   "generated_by" : "Dist::Zilla version 4.300034, CPAN::Meta::Converter version 2.120921",
    "license" : [
       "perl_5"
    ],
@@ -26,29 +26,35 @@
             "ExtUtils::MakeMaker" : "6.30"
          }
       },
+      "develop" : {
+         "requires" : {
+            "Test::CPAN::Meta" : "0"
+         }
+      },
       "runtime" : {
          "requires" : {
-            "JSON" : 0,
-            "Try::Tiny" : 0,
+            "Encode" : "0",
+            "JSON" : "0",
+            "Try::Tiny" : "0",
             "Web::Simple" : "0.008",
             "perl" : "5.006"
          }
       },
       "test" : {
          "requires" : {
-            "File::Find" : 0,
-            "File::Temp" : 0,
-            "HTTP::Request::Common" : 0,
-            "Plack::Test" : 0,
-            "Test::More" : 0,
-            "Test::Warn" : 0
+            "HTTP::Request::Common" : "0",
+            "Plack::Test" : "0",
+            "Test::More" : "0",
+            "Test::Warn" : "0",
+            "strict" : "0",
+            "warnings" : "0"
          }
       }
    },
    "provides" : {
       "WWW::GitHub::PostReceiveHook" : {
          "file" : "lib/WWW/GitHub/PostReceiveHook.pm",
-         "version" : "0.002"
+         "version" : "0.003"
       }
    },
    "release_status" : "stable",
@@ -57,13 +63,13 @@
          "mailto" : "bug-www-github-postreceivehook at rt.cpan.org",
          "web" : "http://rt.cpan.org/Public/Dist/Display.html?Name=WWW-GitHub-PostReceiveHook"
       },
-      "homepage" : "http://github.com/mphill22/WWW-GitHub-PostReceiveHook",
+      "homepage" : "https://github.com/mattp-/WWW-GitHub-PostReceiveHook",
       "repository" : {
          "type" : "git",
-         "url" : "http://github.com/mphill22/WWW-GitHub-PostReceiveHook",
-         "web" : "http://github.com/mphill22/WWW-GitHub-PostReceiveHook"
+         "url" : "https://github.com/mattp-/WWW-GitHub-PostReceiveHook.git",
+         "web" : "https://github.com/mattp-/WWW-GitHub-PostReceiveHook"
       }
    },
-   "version" : "0.002"
+   "version" : "0.003"
 }
 

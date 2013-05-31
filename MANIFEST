@@ -7,9 +7,6 @@ Makefile.PL
 README
 dist.ini
 lib/WWW/GitHub/PostReceiveHook.pm
-t/00-compile.t
 t/post.t
 weaver.ini
 xt/release/distmeta.t
-xt/release/pod-syntax.t
-xt/release/portability.t
