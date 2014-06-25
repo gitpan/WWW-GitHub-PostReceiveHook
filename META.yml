@@ -12,7 +12,7 @@ build_requires:
 configure_requires:
   ExtUtils::MakeMaker: 6.30
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.300034, CPAN::Meta::Converter version 2.120921'
+generated_by: 'Dist::Zilla version 5.019, CPAN::Meta::Converter version 2.141520'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -26,7 +26,7 @@ no_index:
 provides:
   WWW::GitHub::PostReceiveHook:
     file: lib/WWW/GitHub/PostReceiveHook.pm
-    version: 0.003
+    version: 0.004
 requires:
   Encode: 0
   JSON: 0
@@ -37,4 +37,4 @@ resources:
   bugtracker: http://rt.cpan.org/Public/Dist/Display.html?Name=WWW-GitHub-PostReceiveHook
   homepage: https://github.com/mattp-/WWW-GitHub-PostReceiveHook
   repository: https://github.com/mattp-/WWW-GitHub-PostReceiveHook.git
-version: 0.003
+version: 0.004

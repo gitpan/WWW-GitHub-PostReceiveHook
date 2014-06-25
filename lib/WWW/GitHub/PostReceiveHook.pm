@@ -8,11 +8,8 @@
 #
 use Web::Simple 'WWW::GitHub::PostReceiveHook';
 package WWW::GitHub::PostReceiveHook;
-{
-  $WWW::GitHub::PostReceiveHook::VERSION = '0.003';
-}
 # ABSTRACT: A simple means of receiving GitHub's web hooks
-
+$WWW::GitHub::PostReceiveHook::VERSION = '0.004';
 use Try::Tiny;
 use JSON;
 use Encode;
@@ -77,11 +74,11 @@ sub dispatch_request {
 
 1;
 
-
+__END__
 
 =pod
 
-=encoding utf-8
+=encoding UTF-8
 
 =head1 NAME
 
@@ -144,8 +141,3 @@ This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-
-
-__END__
-
-
